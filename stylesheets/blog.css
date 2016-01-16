@@ -19,3 +19,9 @@ ul {
   color: #88A6B2;
   text-decoration: none;
 }
+.image {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}

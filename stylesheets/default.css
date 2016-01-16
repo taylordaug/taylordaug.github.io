@@ -4,10 +4,10 @@
   border-left: 2px dotted #B2B191;
   border-right: 2px
    dotted #B2B191;
-  width: 80%;
+  width: 90%;
   height: 100%;
-  margin-right: 10%;
-  margin-left: 10%;
+  margin-right: 5%;
+  margin-left: 5%;
   background-color: #FFFEFA;
 }
 
@@ -29,6 +29,7 @@
   background-color: #CCCBAE;
   border-top: 2px solid #B2B191;
   border-bottom: 2px solid #B2B191;
+  font-size: 1.2em;
   text-align: center;
   position: relative;
   word-spacing: 2em;
