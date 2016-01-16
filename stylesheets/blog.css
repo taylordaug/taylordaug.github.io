@@ -1,0 +1,21 @@
+.resize {
+  height: 5em;
+  width: 15em;
+}
+
+.center {
+  text-align: center;
+}
+
+.move {
+  margin: auto
+}
+
+ul {
+  list-style-type: none;
+}
+
+.posts a:link, .posts a:visited {
+  color: #88A6B2;
+  text-decoration: none;
+}
