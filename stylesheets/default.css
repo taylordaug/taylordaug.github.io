@@ -31,27 +31,8 @@
   border-bottom: 2px solid #B2B191;
   text-align: center;
   position: relative;
-  word-spacing: 1em;
-  height: 3em;
-
-}
-
-.navbutton {
-  position: relative;
-  text-align: center;
-  word-spacing: 4em;
-}
-
-
-.contactbuttons {
-  position: relative;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  text-align: center;
-  word-spacing: 0.5em;
-  height: 3em;
-
-
+  word-spacing: 2em;
+  padding: 1em;
 }
 
 a:link {
@@ -93,6 +74,7 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  padding: 0em;
 }
 
 /* Social media icons from perfecticons.com */
@@ -166,12 +148,6 @@ h3 {
     margin-right: 10px;
     color: white;
     background-color: #ffdae0;
-}
-
-.soc a:hover {
-    z-index: 2;
-    -webkit-transform: translateY(-5px);
-    transform: translateY(-5px);
 }
 
 .soc-icon-last{
