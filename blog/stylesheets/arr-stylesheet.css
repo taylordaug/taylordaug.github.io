@@ -4,3 +4,10 @@ img {
   height: 30%;
   width: 30%;
 }
+
+pre {
+  font-family: monospace;
+  background-color: #FFEDEC;
+  margin-left: 10%;
+  margin-right: 10%;
+}
