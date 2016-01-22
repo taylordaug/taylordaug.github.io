@@ -10,6 +10,10 @@ pre {
   background-color: #FFEDEC;
   margin-left: 10%;
   margin-right: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 h3 {
