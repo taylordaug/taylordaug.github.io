@@ -4,6 +4,7 @@
   <title>Week Four: Don't Stop Beliebin'</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
   <link rel="stylesheet" type="text/css" href="stylesheets/arr-stylesheet.css">
   <link href='https://fonts.googleapis.com/css?family=Cabin:400,700' rel='stylesheet' type='text/css'>
 </head>
@@ -20,39 +21,45 @@
 <section>
 <h2>Week Four: Don't Stop Beliebin'</h2>
 <h4>January 21, 2016</h4>
+<p><b>DISCLAIMER</b>: This post is entirely about Justin Bieber. Read at your own risk.</p>
 <img class="center" src="jbmugshot.jpg" alt="Bieber's Mugshot"/>
 <p>Bieber has come a long way since his 2014 arrest in Miami (pictured above). To honor his growth as a human and maturation as an artist, I’ve decided to explore the differences between arrays and hashes using some of his recent chart-topping hits. Okay that was a weird segue, how about this: For those of you saying “What Do You Mean” when you hear someone say the word array or hash, you’re going to “Love Yourself” after reading this blog and figuring it out! Alright, come along on this journey with Justin and me.</p>
-<img class="center" src="jbcomehere.jpg" alt="Come Hither"/>
-<h4>Array</h4>
-<p>Let’s create an array to store Justin Bieber’s newest hits.</p>
-<rubycode>
+<img class="center" src="jbcomehere.JPG" alt="Come Hither"/>
+<h3>Array</h3>
+<p>Let’s create an array to store Justin Bieber’s newest hits. I'm going to call the array "bieber_fever" because, I have it. Normally for variables in Ruby you'll use lowercase and separate spaces with an underscore - that's just how things are done.</p>
+<pre>
 bieber_fever = [“Sorry”, “What Do You Mean”, “Where Are &Uuml; Now”, “Love Yourself”]
-</rubycode>
-<p>To access a song in this array, I’d have to figure out which index it’s at. Each song is in order, starting with 0. Because the first value is at index 0, I’d have to count, 0…1…2… and finally 3 to find that “Love Yourself” is at index 3. I’d access this with the syntax bieber_fever[3].</p>
-<code>
-bieber_fever[3] = “Love Yourself"
-</code>
-<h4>Hash</h4>
-<p>If I were to create a hash of Bieber’s newest hits, I could store each one in a something called a key that gives a little more information about what the song means to me. In the example above, the key is the description that comes before the arrow. In this hash, the song is the value.</p>
-<code>
+</pre>
+<p>Here I've listed out four songs in a row. Things in an array are contained in [square brackets]. To access a song in this array, I’d have to figure out which slot, or index, it’s at. The first slot is slot 0, NOT 1. Remember this. That means "Sorry" is at index 0. From there I’d have to count, 0. . .1. . .2. . .3 to find that “Love Yourself” is at index 3. I’d access this like this:</p>
+<pre>
+bieber_fever[3]
+</pre>
+<p>because we are looking for the song in slot 3 of the array, even though this is actually the 4th song listed. Arrays are pretty cut and dry - they're just a list of values. They remind me of this picture of the Biebs:</p>
+<img class="center" src="serious.jpg" alt="Serious Biebs"/>
+<p>...serious, straightforward, black and white.</p>
+<h3>Hash</h3>
+<p>If I were to create a hash of Bieber’s newest hits, I could store each one in a something called a key that gives a little more information about what the song means to me. A hash is a collection of things that come in pairs. In the example below, the key is the description that comes before the arrow, and the song is the value.</p>
+<pre>
 bieber_fever = {
      “best to dance to" => “Sorry”,
      “largest deviation from Bieber’s normal music" => “Where Are U Now”,
      “catchiest” => "What Do You Mean”,
      “most offensive to Selena Gomez" => “Love Yourself"
 }
-</code>
-<p>So, instead of counting down to find a song’s index, we can easily choose a song by using the key associated with it. To find “Love Yourself” here, I’d just have to type:</p>
-<code>
+</pre>
+<p>Here, we have the same four songs listed about, but with a little more flavor added. Hashes look different from arrays in that they are stored in {curly brackets} and contain those key-value pairs we talked about earlier. Key-value pairs look like this "key => value." So, instead of counting down to find a song’s index, we can easily choose a song by using the key associated with it. To find “Love Yourself” here, I’d just have to type:</p>
+<pre>
 bieber_fever[“most offensive to Selena Gomez”]
-</code>
-<p>No annoying counting from 0 involved!</p>
-<h4>Why use one over the other?</h4>
-<p>Hashes are great for things that don’t need to be ordered. Since all four of these Bieber jams are undeniable hits, I have no interest in ranking them in any order like an array implies. With the hash, we can store all four songs with no implied order and assign keys that really describe each unique sound.</p>
-<h4>Bottom Line:</h4>
-<p>If you want to assign values to something other than integers, use a hash. If you have many values, it is easier to call one by it’s key than by its index (which you have to count manually).</p>
-</section>
+</pre>
+<p>No annoying counting from 0 involved! As you can see, you can store a lot more "flavor" in your hashes by assigning values to keys. A hash is more like this JB:</p>
+<img class="center" src="eccentric.jpg" alt="Crazy Biebs"/>
+<p>...more robust, more eccentric...</p>
+<h3>Why use one over the other?</h3>
+<p>Hashes are great for things that don’t need to be ordered. Since all four of these Bieber jams are undeniable hits in my opinion, I have no interest in ranking them in any order like an array implies. With the hash, we can store all four songs with no implied order and assign keys that really describe each unique sound. However, if someone wanted to list out each Bieber tune in order of their preference, they may choose to use an array, which would read more easily and be more efficient to sort.</p>
+<h3>Bottom Line:</h3>
+<p>If you want to assign values to something other than integers, use a hash. If you have many values, it is easier to call one by it’s key (which is often more descriptive) than by its index (which you have to count manually). If you're good with a simple list of items and would like easily order them, (by number, alphabetically, in reverse, etc.) use an array.</p>
 <h4>Taylor</h4>
+</section>
 <footer class="buttons">
    <ul class="soc">
       <li><a class="soc-email1" href="mailto:taylor.l.daugherty@gmail.com"></a></li>
