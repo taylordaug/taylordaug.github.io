@@ -20,6 +20,11 @@ ul {
   color: #88A6B2;
   text-decoration: none;
 }
+
+td li {
+  margin-bottom: 10%;
+}
+
 .image {
   display: block;
   position: relative;
