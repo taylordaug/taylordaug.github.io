@@ -8,13 +8,13 @@
   height: 100%;
   margin-right: 5%;
   margin-left: 5%;
-  background-color: #FFFEFA;
+  background-color: #white;
 }
 
 .logo {
   text-align: center;
   padding: 0.5em;
-  color: #88A6B2;
+  color: #61777F;
   font-family: 'Cabin'; sans-serif;
   font-weight: bold;
   font-size: 4em;
@@ -22,10 +22,20 @@
   display: block;
   height: 1.5em;
   margin: 0em;
-  background-color: #FFFEFA;
+  background-color: #white;
 }
 
 .buttons {
+  background-color: #CCCBAE;
+  border-top: 2px solid #B2B191;
+  border-bottom: 2px solid #B2B191;
+  font-size: 1.2em;
+  text-align: center;
+  position: relative;
+  padding: 1em;
+}
+
+.topbuttons {
   background-color: #CCCBAE;
   border-top: 2px solid #B2B191;
   border-bottom: 2px solid #B2B191;
@@ -52,7 +62,6 @@ a:hover {
 
 h3 {
   text-align: center;
-  color: #88A6B2;
 }
 
 .pagetext {
@@ -61,7 +70,7 @@ h3 {
 }
 * {
   font-family: 'Cabin'; sans-serif;
-  color: #88A6B2;
+  color: #61777F;
 }
 
 .center {
@@ -139,24 +148,24 @@ h3 {
     display:block;
     position: relative;
     z-index: 1;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    font-size: 22px;
-    -webkit-border-radius: 27px;
-    -moz-border-radius: 27px;
-    border-radius: 27px;
-    margin-right: 10px;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 26px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    margin-right: 0px;
     color: white;
-    background-color: #ffdae0;
+    background-color: #FFDAE0;
 }
 
 .soc-icon-last{
     margin:0 !important;
 }
 
-.soc-google:before {
-    content:'c';
+.soc-email1:before {
+    content:'<';
 }
 .soc-linkedin:before {
     content:'j';
@@ -166,4 +175,7 @@ h3 {
 }
 .soc-twitter:before {
     content:'a';
+}
+.soc-instagram:before {
+    content:'x';
 }
