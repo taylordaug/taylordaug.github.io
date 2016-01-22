@@ -1,0 +1,18 @@
+.bio {
+  text-align: center;
+  color: #88A6B2;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 5%;
+}
+
+img {
+  width: 10%;
+  height: 10%;
+  border: 0.15em solid #61777F;
+  size: cover;
+}
+
+section {
+  padding: 5%;
+}
