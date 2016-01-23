@@ -67,6 +67,9 @@ h3 {
 .pagetext {
   text-align: center;
   color: #88A6B2;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 5%;
 }
 * {
   font-family: 'Cabin'; sans-serif;
@@ -74,8 +77,8 @@ h3 {
 }
 
 .center {
-  display: block;
-  margin: auto;
+  text-align: center;
+  padding: 2%;
 }
 
 .background {
