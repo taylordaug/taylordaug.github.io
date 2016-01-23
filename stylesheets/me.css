@@ -1,9 +1,8 @@
 .bio {
   text-align: center;
   color: #88A6B2;
-  padding-left: 15%;
-  padding-right: 15%;
-  padding-bottom: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 img {
@@ -15,4 +14,8 @@ img {
 
 section {
   padding: 5%;
+}
+
+h2 {
+  text-align: center;
 }
