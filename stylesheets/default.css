@@ -13,17 +13,16 @@
 
 .logo {
   text-align: center;
-  padding: 0.5em;
+  padding: 0.2em;
+  padding-bottom: .5em;
   color: #61777F;
-  font-family: 'Cabin'; sans-serif;
-  font-weight: bold;
-  font-size: 4em;
+  font-family: 'Pacifico', cursive;
+  font-size: 5em;
   position: relative;
   display: block;
   height: 1.5em;
   margin: 0em;
   background-color: #white;
-  text-shadow: 1em 1em solid #88A6B2;
 }
 
 .buttons {
