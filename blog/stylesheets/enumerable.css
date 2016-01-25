@@ -1,0 +1,20 @@
+.pic {
+  margin: auto;
+  text-align: center;
+  height: 50%;
+  width: 50%;
+  padding: 2%;
+  display: block;
+  border-radius: 10%;
+}
+
+pre {
+  font-family: monospace;
+  background-color: #FFEDEC;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
