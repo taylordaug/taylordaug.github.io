@@ -1,4 +1,8 @@
-img {
+.pic {
   height: 50%;
   width: 50%;
+  text-align: center;
+  padding: 2%;
+  display: block;
+  margin: auto;
 }

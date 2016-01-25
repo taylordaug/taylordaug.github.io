@@ -4,11 +4,17 @@
   border-left: 2px dotted #B2B191;
   border-right: 2px
    dotted #B2B191;
-  width: 90%;
+  width: 95%;
   height: 100%;
-  margin-right: 5%;
-  margin-left: 5%;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
   background-color: #white;
+}
+
+img {
+  text-align: center;
+  display: block;
+  margin: auto;
 }
 
 .logo {
@@ -22,7 +28,10 @@
   display: block;
   height: 1.5em;
   margin: 0em;
-  background-color: #white;
+  background: center url("../texture.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 .buttons {

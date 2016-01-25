@@ -11,6 +11,13 @@
 
 }
 
+.bloglogo {
+  text-align: center;
+  padding: 2%;
+  display: block;
+  margin: auto;
+}
+
 .move {
   margin: auto
 }

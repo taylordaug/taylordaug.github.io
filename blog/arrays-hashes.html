@@ -12,7 +12,7 @@
 </head>
 <body>
    <main class="container">
-    <img class="center" src="blogheader.png" alt="Taylor Learns to Code"/>
+    <img class="bloglogo" src="blogheader.png" alt="Taylor Learns to Code"/>
 <div class="topbuttons">
   <a href="../index.html">home</a>
   <a href="../me.html">me</a>
@@ -24,9 +24,9 @@
 <h2>Don't Stop Beliebin'</h2>
 <h4>January 21, 2016</h4>
 <p><b>DISCLAIMER</b>: This post is entirely about Justin Bieber. Read at your own risk.</p>
-<img class="center" src="jbmugshot.jpg" alt="Bieber's Mugshot"/>
+<img class="pic" src="jbmugshot.jpg" alt="Bieber's Mugshot"/>
 <p>Bieber has come a long way since his 2014 arrest in Miami (pictured above). To honor his growth as a human and maturation as an artist, I’ve decided to explore the differences between arrays and hashes using some of his recent chart-topping hits. Okay that was a weird segue, how about this: For those of you saying “What Do You Mean” when you hear someone say the word array or hash, you’re going to “Love Yourself” after reading this blog and figuring it out! Alright, come along on this journey with Justin and me.</p>
-<img class="center" src="jbcomehere.JPG" alt="Come Hither"/>
+<img class="pic" src="jbcomehere.JPG" alt="Come Hither"/>
 <h3>Array</h3>
 <p>Let’s create an array to store Justin Bieber’s newest hits. I'm going to call the array "bieber_fever" because, I have it. Normally for variables in Ruby you'll use lowercase and separate spaces with an underscore - that's just how things are done.</p>
 <pre>
@@ -37,7 +37,7 @@ bieber_fever = [“Sorry”, “What Do You Mean”, “Where Are &Uuml; Now”,
 bieber_fever[3]
 </pre>
 <p>because we are looking for the song in slot 3 of the array, even though this is actually the 4th song listed. Arrays are pretty cut and dry - they're just a list of values. They remind me of this picture of the Biebs:</p>
-<img class="center" src="serious.jpg" alt="Serious Biebs"/>
+<img class="pic" src="serious.jpg" alt="Serious Biebs"/>
 <p>...serious, straightforward, black and white.</p>
 <h3>Hash</h3>
 <p>If I were to create a hash of Bieber’s newest hits, I could store each one in a something called a key that gives a little more information about what the song means to me. A hash is a collection of things that come in pairs. In the example below, the key is the description that comes before the arrow, and the song is the value.</p>
@@ -54,7 +54,7 @@ bieber_fever = {
 bieber_fever[“most offensive to Selena Gomez”]
 </pre>
 <p>No annoying counting from 0 involved! As you can see, you can store a lot more "flavor" in your hashes by assigning values to keys. A hash is more like this JB:</p>
-<img class="center" src="eccentric.jpg" alt="Crazy Biebs"/>
+<img class="pic" src="eccentric.jpg" alt="Crazy Biebs"/>
 <p>...more robust, more eccentric...</p>
 <h3>Why use one over the other?</h3>
 <p>Hashes are great for things that don’t need to be ordered. Since all four of these Bieber jams are undeniable hits in my opinion, I have no interest in ranking them in any order like an array implies. With the hash, we can store all four songs with no implied order and assign keys that really describe each unique sound. However, if someone wanted to list out each Bieber tune in order of their preference, they may choose to use an array, which would read more easily and be more efficient to sort.</p>

@@ -1,6 +1,11 @@
-section img {
+.pic {
   width: 50%;
   height: 50%;
+  text-align: center;
+  padding: 2%;
+  display: block;
+  margin: auto;
+}
 }
 
 img:nth-child(2){

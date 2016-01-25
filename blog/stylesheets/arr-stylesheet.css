@@ -1,8 +1,12 @@
-img {
+.pic {
   margin: auto;
   text-align: center;
   height: 30%;
   width: 30%;
+  padding: 2%;
+  display: block;
+
+}
 }
 
 pre {
