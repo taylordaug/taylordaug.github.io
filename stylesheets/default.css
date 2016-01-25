@@ -44,7 +44,9 @@
   position: relative;
   word-spacing: 2em;
   padding: 1em;
+
 }
+
 
 a:link {
   color: white;
@@ -181,4 +183,9 @@ h3 {
 }
 .soc-instagram:before {
     content:'x';
+}
+
+.soc a:hover {
+  background-color: white;
+  color: #FFDAE0;
 }
