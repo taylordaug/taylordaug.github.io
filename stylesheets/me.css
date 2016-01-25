@@ -8,8 +8,9 @@
 img {
   width: 10%;
   height: 10%;
-  border: 0.15em solid #61777F;
+  border: 0.08em dotted #B2B191;
   size: cover;
+  border-radius: 1em;
 }
 
 section {
