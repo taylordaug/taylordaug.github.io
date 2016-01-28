@@ -1,0 +1,30 @@
+.resume a:link, .resume a:visited {
+  color: #88A6B2;
+  text-decoration: none;
+}
+
+.center {
+  margin-bottom: 0;
+}
+
+div ul {
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 5%;
+}
+
+.button {
+  font-size: 1.3em;
+  border: 3px dotted #88A6B2;
+  display: inline-block;
+  width: 5em;
+  border-radius: 30%;
+  margin: 2.5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-right: 1.5%;
+  padding-left: 1.5%;
+}
+
+

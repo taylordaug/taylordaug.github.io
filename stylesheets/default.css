@@ -2,8 +2,7 @@
   display: inline-block;
   color: FFFDC2;
   border-left: 2px dotted #B2B191;
-  border-right: 2px
-   dotted #B2B191;
+  border-right: 2px dotted #B2B191;
   width: 95%;
   height: 100%;
   margin-right: 2.5%;
@@ -25,7 +24,10 @@
   background: center url("../texture.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
 
+.here {
+  border-bottom: 2px dotted white;
 }
 
 .buttons {
@@ -63,6 +65,7 @@ a:visited {
 }
 a:hover {
   font-weight: bold;
+  border-bottom: 2px dotted white;
 }
 
 h3 {
