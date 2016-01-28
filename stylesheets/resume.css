@@ -5,13 +5,14 @@
 
 .center {
   margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 div ul {
   text-align: center;
   list-style: none;
   padding: 0;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
 
 .button {
@@ -20,7 +21,7 @@ div ul {
   display: inline-block;
   width: 5em;
   border-radius: 30%;
-  margin: 2.5%;
+  margin: 1.5%;
   padding-top: 3%;
   padding-bottom: 3%;
   padding-right: 1.5%;

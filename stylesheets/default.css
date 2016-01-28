@@ -27,7 +27,7 @@
 }
 
 .here {
-  border-bottom: 2px dotted white;
+  font-weight: bold;
 }
 
 .buttons {
@@ -65,7 +65,6 @@ a:visited {
 }
 a:hover {
   font-weight: bold;
-  border-bottom: 2px dotted white;
 }
 
 h3 {
