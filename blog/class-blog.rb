@@ -1,4 +1,4 @@
-class AdoptACat
+class YourFutureCat
 
   def initialize(breeds, gender, girl_names, boy_names)
     @breed = breeds
