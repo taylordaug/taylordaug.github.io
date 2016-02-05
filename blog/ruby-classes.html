@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Top of the Class</title>
+  <title>Best in Class</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
   <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
@@ -24,30 +24,51 @@
 <h2>Top of the Class</h2>
 <h4>February 3rd, 2016</h4>
 <p>Once I graduate from DevBootcamp and get hired, I am rewarding myself by getting a kitten.</p>
-<img class="toppic" src="kitten-1.jpg" alt="My Future Kitten"/>
-<img class="toppic" src="kitten-2.jpg" alt="Are You My Future Kitten?"/>
-<img class="toppic" src="kitten-3.jpg" alt="Are You My Future Kitten?"/>
-<img class="toppic" src="kitten-4.jpg" alt="Are You My Future Kitten?"/>
-<p>However, I know I can be very indecisive, so with my new knowledge of Ruby classes, I am going to create a program that will randomly generate the type of cat I should get. I want to be able to input options of breeds and names that I love, and also include whether it should be a male or female. Each new cat, or instance, that is created from this class will tell me the breed, gender, and name of my new cat. I'll even be able to pass my cat generator on to friends and it will continue to spit out cats, or objects, that follow this same blueprint of breed, name and gender. The name of this class with be <span>YourFutureCat</span>. I need to set the blueprint that I want all cats created from this class to follow. This is called initializing and looks like this</p>
-<pre>
-class YourFutureCat
-def initialize(breeds, gender, girl_names, boy_names)
-    @breed = breeds
-    @gender = gender
-    @girl_names = girl_names
-    @boy_names = boy_names
-  end
-</pre>
-<p>See those @ signs? Those are storing the options for breeds, gender, and names in variables that can be used across methods in this class. This means that I can now call the variable @breed in the next method that I define in the class:
+<div class="toppic">
+<img class="pic" src="kitten-1.jpg" alt="My Future Kitten"/>
+<img class="pic" src="kitten-2.jpg" alt="Are You My Future Kitten?"/>
+<img class="pic" src="kitten-3.jpg" alt="Are You My Future Kitten?"/>
+</div>
+<p>However, I know I can be very indecisive, so with my new knowledge of Ruby classes, I am going to create a program that will randomly generate the type of cat I should get. I want to be able to input options of breeds and names that I love, and also include whether it should be a male or female. Each new cat, or instance, that is created from this class will tell me the breed, gender, and name of my new cat. I'll even be able to pass my cat generator on to friends and it will continue to spit out cats, or objects, that follow this same blueprint of breed, name and gender. The name of this class will be <span>YourFutureCat</span>.</p>
+
+<p>My first method will be to randomly select a breed from a list of options I enter:</p>
 <pre>
 def breed
-    @breed.sample
-  end
+  breed = ["Himalayan", "Persian", "Russian Blue", "Tabby", "Scottish Fold"].sample
+end
 </pre>
-<p>The variable @breed was created in the method <pre> initialize</pre>, but I can still use it in the new method <span>breed</span>. Usually, you variables live inside the methods they are created in. But @instancevariables work across the instance of the class, or this particular object you are creating with the class.</p>
-
-<p>post</p>
-<p>post</p>
+<p>The #sample method chooses a string in the array at random, meaning it will pick one breed each time.  I'll create a similar method to randomly select the gender and define it here:</p>
+<pre>
+def gender
+  @gender = ["female", "male"].sample
+end
+</pre>
+<p>Hm, what is that @ sign in front of gender? That's called an instance variable. <span>@instancevariables</span> work across the instance of the class. Remember, an instance of a class just means one object, or one thing created by the class. In our case, one instance of this class will be one cat recommendation. Since I'll need to use the gender variable in my next method to choose a name (since the names I've chosen depend on gender), I'll need to be able to carry this variable over to a new method for names. This is achieved with an instance variable, which always has that @ sign in front of it. This means I can now use this variable in any other method in this class.</p>
+<p>So I have a list of boy names and girl names, and I want my class to choose a boy's name if the cat is a boy, and a girl's name if the cat is a girl. Check this out:</p>
+<pre>
+def name
+  if @gender == "male"
+    name = ["Chunk", "Taco", "Pudge"].sample
+  else
+    name = ["Noodle", "Princess"].sample
+  end
+end
+</pre>
+<p>Using our <span>@gender</span> instance variable, we can pick from the appropriate name category depending on the gender defined in the previous method. Again #sample will choose a random name from the array.</p>
+</p>To create a new instance of this class I will use this syntax:</p>
+<pre>
+my_cat = YourFutureCat.new
+</pre>
+<p>This just creates a new variable, <span>my_cat</span>, and sets it equal to a new instance, or object, of the class <span>YourFutureCat</span>. I'm going to call the methods we defined on my new cat <span>my_cat</span> like this so the cat's breed, gender, and name are displayed in a simple sentence:</p>
+<pre>
+puts "You should adopt a #{my_cat.gender} " + "#{my_cat.breed} and name it " + "#{my_cat.name}."
+</pre>
+<p>Are you ready for the result? Drum roll please...</p>
+<pre>
+=> "You should adopt a male Tabby and name it Pudge."
+</pre>
+<p>Alright, looks like that's settled! Can't wait to welcome Pudge in a few months.</p>
+<img class="bottompic" src="kitten-4.jpg" alt="Are You My Future Kitten?"/>
 <h4>Taylor</h4>
 </section>
 <footer class="buttons">

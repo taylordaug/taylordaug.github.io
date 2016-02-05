@@ -1,38 +1,24 @@
 class YourFutureCat
 
-  def initialize(breeds, gender, girl_names, boy_names)
-    @breed = breeds
-    @gender = gender
-    @girl_names = girl_names
-    @boy_names = boy_names
-  end
-
   def breed
-    @breed.sample
+    breed = ["Himalayan", "Persian", "Russian Blue", "Tabby", "Scottish Fold"].sample
   end
 
   def gender
-    @gender.sample
+    @gender = ["female", "male"].sample
   end
 
-  def name(gender)
-
-    if gender == gender[0]
-      @boy_names.sample
+  def name
+    if @gender == "male"
+      name = ["Chunk", "Taco", "Pudge"].sample
     else
-      @girl_names.sample
+      name = ["Noodle", "Princess"].sample
     end
   end
 end
 
+my_cat = YourFutureCat.new
 
-breeds = ["Himalayan", "Persian", "Russian Blue", "Tabby", "Scottish Fold"]
-gender = ["male", "female"]
-girl_names = ["Chunk", "girl"]
-boy_names = ["Poop", "boy"]
-
-my_cat = AdoptACat.new(breeds, gender, girl_names, boy_names)
-
-puts "You should adopt a #{my_cat.gender} " + "#{my_cat.breed} and name it " + "#{my_cat.name(gender)}."
+puts "You should adopt a #{my_cat.gender} " + "#{my_cat.breed} and name it " + "#{my_cat.name}."
 
 
