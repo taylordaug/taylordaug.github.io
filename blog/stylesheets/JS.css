@@ -1,0 +1,12 @@
+table td {
+  border: dotted 2px #88A6B2;
+  list-style: disc;
+  padding: none;
+  text-align: center;
+  margin: auto;
+}
+
+ul {
+  border: 0;
+  padding: 0;
+}
