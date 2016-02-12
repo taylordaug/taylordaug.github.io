@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Why Does Everyone Hate JavaScript?</title>
+  <title>Why Everyone Loves to Hate JavaScript</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
   <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
@@ -21,14 +21,15 @@
   <a href="index.html">blog</a>
 </div>
 <section>
-<h2>Why Does Everyone Hate JavaScript?</h2>
-<h4>February 11, 2016</h4>
+<h2>Why Everyone Loves to Hate JavaScript</h2>
+<h4>February 12, 2016</h4>
 <img class="float" src="hatejs.jpg" alt="I Hate JavaScript"/>
-<p>I was apprehensive about getting going with JavaScript this week. Here's what I was hearing:</p>
-<p>"JavaScript is a miserable programming language. Anyone who tells you differently has advanced JavaScript stockholm syndrome."</p>
+<p>I was apprehensive about getting started with JavaScript this week. Here's what I was hearing:</p>
+<span><p>"JavaScript is a miserable programming language. Anyone who tells you differently has advanced JavaScript stockholm syndrome."</p>
 <p>"JavaScript goes to such enormous lengths to avoid crashing that it impedes its usability."</p>
-<p>"It sucks."</p>
-<p>Since JavaScript really isn't going anywhere, we might as well suck it up and learn it! In this first week, it helped to directly compare how something is done in Ruby versus JavaScript. Let's explore what key-value pair structures look like in both languages, using my favorite Chicago restaurants for different cuisines.</p>
+<p>"It sucks."</p></span>
+<p>Since JavaScript really isn't going anywhere, we might as well suck it up and learn it! In this first week, it helped to directly compare how something is done in Ruby versus JavaScript. Let's explore what key-value pair structures look like in both languages, using my favorite Chicago restaurants for different meals.</p>
+<div class="fix">
 <pre>
 Ruby:
 
@@ -42,7 +43,7 @@ fave_restaurants_chicago = {
   italian: "Balena"
 }
 </pre>
-<pre class = "2">
+<pre>
 JavaScript:
 
 var faveRestaurantsChicago = {
@@ -55,6 +56,13 @@ var faveRestaurantsChicago = {
   italian: "Balena"
 };
 </pre>
+</div>
+<div class ="foodpic">
+<img class="food" src="taco.jpg" alt="Tacos"/>
+<img class="food" src="sushi.jpg" alt="Sushi"/>
+<img class="food" src="dmk.jpeg" alt="Burger"/>
+<img class="food" src="bongo.jpg" alt="Burger"/>
+</div>
 <p>The following table will outline the differences in manipulating, accessing, and naming these structures.</p>
 <table>
   <tr>
@@ -105,7 +113,8 @@ var faveRestaurantsChicago = {
 </tbody>
 </table>
 <p>*Ruby: if keys are NOT symbols, you use hash rocket notation {cuisine => "name"}.</p>
-<p>Getting used to the for loops in JavaScript will be challenging - I love my each method!</p>
+<h4>Bottom Line</h4>
+<p>The data structures slightly differ in the two languages. Getting used to the for loops in JavaScript has been challenging since I grew to love the #each method. One of the biggest differences I've noticed is accessing a value in JS using dot notation, which looks like a method call, but is just calling the associated property. JS methods seem to always have empty parentheses after them, which call the method, and curly brackets must be nested correctly. Cross checking my syntax with resources very carefully in the beginning will help solidify these new conventions and set me on my way toward not hating JavaScript.</p>
 <h4>Taylor</h4>
 </section>
 <footer class="buttons">
