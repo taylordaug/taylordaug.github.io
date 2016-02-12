@@ -1,12 +1,41 @@
-table td {
-  border: dotted 2px #88A6B2;
-  list-style: disc;
+table {
   padding: none;
   text-align: center;
   margin: auto;
+  border-collapse: collapse;
+
+}
+
+td {
+  border: dotted 1px #88A6B2;
+  padding: 0.5em;
+}
+
+tr > td:first-child {
+  font-weight: bold;
+}
+
+th {
+  border: dotted 1px #88A6B2;
+  font-size: 1.2em;
 }
 
 ul {
   border: 0;
   padding: 0;
+}
+
+pre {
+  display: table-cell;
+  width: 20%;
+  border: 2em white solid;
+}
+
+.float {
+  float: left;
+  margin-right: 2em;
+  margin-bottom: 2em;
+  width: 50%;
+  height: 50%;
+  border-radius: 5%;
 }
