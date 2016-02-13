@@ -1,0 +1,20 @@
+* {
+  font-family: Cabin;
+  font-color: black;
+
+}
+
+p {
+  text-align: center;
+  margin: auto;
+}
+
+img {
+  display: table-cell;
+  width: 40%;
+  margin: auto;
+  clear: bottom;
+  text-align: center;
+  padding-bottom: 2em;
+  padding-top: 2em;
+}
