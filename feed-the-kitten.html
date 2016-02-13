@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="name"></p>
+<img src="kitten.png" width="50%" alt="kitten">
+
+<button onclick ="kitten.checkStatus()">Play</button>
+<button onclick ="kitten.checkStatus()">How full?</button>
+<button onclick ="kitten.feed()">Feed!</button>
+<button onclick ="kitten.pet()">Pet!</button>
+<p id="output"></p>
+<script>
+var kitten = function (name, full) {
+  this.name = name;
+  this.full = 10;
+}
+
+
+var full = [1,2,3,4,5,6,7,8,9,10];
+var fullStatus = full[Math.floor(Math.random()* (full.length))];
+
+
+kitten.checkStatus = function () {
+    if (fullStatus > 10) {
+      document.getElementById("output").innerHTML = ("You have fed " + yourKitten.name + " too much! " + yourKitten.name + " threw up on your carpet.");}
+    else if (fullStatus >= 8 && fullStatus <= 10) {
+      document.getElementById("output").innerHTML = (yourKitten.name + " is full and happy!");}
+    else if (fullStatus >= 5 && fullStatus <= 7) {
+      document.getElementById("output").innerHTML = (yourKitten.name + " is a little hungry and cranky!");}
+    else if (fullStatus >= 3 && fullStatus <= 4){
+      document.getElementById("output").innerHTML = (yourKitten.name + " is very hungry and getting sleepy!");}
+    else if (fullStatus >= 1 && fullStatus <= 2){
+      document.getElementById("output").innerHTML = (yourKitten.name + " is STARVING!");}
+    else {
+      document.getElementById("output").innerHTML = ("You neglected" + yourKitten.name + " for too long." + yourKitten.name + " ran away to find a better home.");}
+}
+
+kitten.feed = function() {
+  kitten.full = fullStatus ++
+  if (fullStatus >= 10){
+    document.getElementById("output").innerHTML = (yourKitten.name + " says, no more!")}
+  else {document.getElementById("output").innerHTML = (yourKitten.name + " says, I could eat more!")}
+}
+
+kitten.pet = function() {
+
+}
+
+var yourKitten = new kitten(window.prompt("Please name your kitten:"), "yourKitten")
+
+document.getElementById("name").innerHTML = yourKitten.name;
+document.getElementById("name").innerHTML = yourKitten.name + " is your kitten! See what " + yourKitten.name + " needs by clicking PLAY."
+
+</script>
+
+</body>
+</html>
