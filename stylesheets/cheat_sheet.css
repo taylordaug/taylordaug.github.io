@@ -1,0 +1,51 @@
+img {
+  text-align: center;
+  margin-left: 38%;
+  margin-right: 38%;
+  size: 1em;
+  padding: 1em;
+}
+
+* {
+  font-family: 'Roboto Mono';
+  color: #2C21B2;
+}
+
+.container {
+  border-left: 2px dotted #B29D27;
+  border-right: 2px dotted #B29D27;
+  width: 95%;
+  height: 100%;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+}
+
+th {
+  text-align: center;
+  background: #7E73FF;
+  border: 2px solid #2C21B2;
+  padding: 0.5em;
+  color: #FFEA76;
+}
+
+td {
+  text-align: center;
+  padding: 1em;
+  width: 50%;
+  border: 2px solid #2C21B2;
+}
+
+table {
+  width: 100%;
+}
+
+pre {
+  font-family: monospace;
+  background-color: #FFEA76;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
