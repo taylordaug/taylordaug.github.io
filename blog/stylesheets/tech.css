@@ -1,0 +1,25 @@
+.piccontainer {
+  margin: auto;
+  text-align: center;
+}
+
+.resize {
+  width: 20%;
+  height: 20%;
+  padding: 1em;
+}
+
+
+span {
+  font-style: italic;
+  font-size: .8em;
+}
+
+pre {
+  width: 30%;
+  margin: auto;
+}
+
+ul {
+  list-style: disc;
+}

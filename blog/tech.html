@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Recursion, see Recursion.</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/tech.css">
+  <link href='https://fonts.googleapis.com/css?family=Cabin:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/>
+</head>
+<body>
+   <main class="container">
+    <img class="center" src="blogheader.png" alt="Taylor Learns to Code"/>
+<div class="topbuttons">
+  <a href="../index.html">home</a>
+  <a href="../me.html">me</a>
+  <a href="../projects/index.html">projects</a>
+  <a href="../resume.html">resume</a>
+  <a href="index.html">blog</a>
+</div>
+<section>
+<h2>Recursion, <span>see Recursion</span>.</h2>
+<h4>February 18, 2016</h4>
+<p>While poking around blogs and articles as I began my coding journey, I kept seeing jokes like this:</p>
+<img class="center" src="recursionjoke.png" alt="Recursion Joke"/>
+<p>I felt like an idiot not understanding this, so I decided to do some research.</p>
+<p>Recursion is the process of repeating an item in a way that keeps repeating a part of itself. Recursion occurs in a function or method that calls on itself inside of itself. A few real world examples include: <ul><li>when two mirrors are facing each other and they keep reflecting each other forever</li> <li>a painting of a painting holding the same painting</li> <li>a dream inside of a dream, like in the movie <i>Inception</i></li></p>
+<div class = "piccontainer">
+<img class="resize" src="recursion2.jpg" alt="Mirror Recursion"/>
+<img class="resize" src="recursion.jpg" alt="Mona Lisa Recursion"/>
+<img class="resize" src="inception.jpg" alt="Inception"/>
+</div>
+<p>The classic example in programming is the <b>factorial</b>. The function calls itself recursively on a smaller version of the input, n - 1. Notice the method call for factorial inside the method itself. Here is a factorial in Ruby:</p>
+<pre>
+def factorial(n)
+  if n == 0
+    1
+  else
+    n * factorial(n-1)
+  end
+end
+</pre>
+<p>The factorial example illustrates how recursion happens when a function is made up of smaller versions of itself.</p>
+<h4>The kicker?</h4>
+<p>To ensure your function doesn't run forever and ever, you must incorporate a "kick". A recursive function is comprised of two parts: the terminating condition and the recursive part. The terminating condition, or kick, tells your function when to stop so it does not infinitely loop. The kick in the factorial example above is the "if n == 0" condition. This returns a value which stops the recursion because it kicks the function out of the repeating loop.
+</p>
+<h4>Pros and cons to recursion:</h4>
+<p>In most cases, iteration is preferred over recursion. This is because a recursive function uses a LOT of memory. In general, each time any language calls a function, space is carved out in the stack for the function's arguments and local variables. If a function is calling itself, it will carve out more space each time the function is called, which happens over and over in recursion. This makes the program vulnerable to running out of memory and crashing. The crash happens due to a stack overflow, which is basically when a program attempts to use more space than is available. The major pro to using recursion is how short and efficient the code can look. While it may be a more elegant solution, the toll it takes on the stack may not always be worth it.</p>
+<h4>Taylor</h4>
+</section>
+<footer class="buttons">
+   <ul class="soc">
+    <li><a class="soc-email1" href="mailto:taylor.l.daugherty@gmail.com"></a></li>
+    <li><a class="soc-linkedin" href="https://www.linkedin.com/in/taylor-daugherty-3077a03b"></a></li>
+    <li><a class="soc-github" href="https://github.com/taylordaug"></a></li>
+    <li><a class="soc-twitter" href="https://twitter.com/taylor_codes"></a></li>
+    <li><a class="soc-instagram soc-icon-last" href="https://www.instagram.com/taylordaugherty/"></a></li>
+  </ul>
+</footer>
+<div class="background">
+</div>
+</main>
+</body>
+</html>
