@@ -45,13 +45,35 @@ li {
   list-style: none;
 }
 
+li span {
+  font-size: .8em;
+}
+.topbar {
+  background-color:#FFD800;
+  border: 3px solid #FFD800;
+  padding: 1em;
+  font-weight: bold;
+  word-wrap: break-word;
+}
+
 pre {
   font-family: monospace;
   background-color: #FFEA76;
-  margin-left: 10%;
-  margin-right: 10%;
+  text-align: left;
+  vertical-align: center;
+  margin-left: 15%;
+  margin-right: 15%;
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 2%;
-  padding-bottom: 2%;
+}
+
+pre span {
+  font-weight: bold;
+  font-family: monospace;
+}
+
+.large {
+  padding-left: 0em;
+
 }
