@@ -32,6 +32,10 @@ ul {
   text-decoration: none;
 }
 
+i {
+  color: #88A6B2;
+}
+
 td li {
   margin-bottom: 10%;
 }
