@@ -35,40 +35,70 @@
     </pre>
     <li><b>until</b> <span>executes code while conditional is false</span></li>
       <pre>
-     <span>until</span> conditional <span>do</span>
+      <span>until</span> conditional <span>do</span>
         code
       <span>end</span>
       </pre>
     <li><b>next</b> <span>jumps to next iteration of the most internal loop</span></li>
-    <li><b>redo</b> <span>restarts this iteration of the most internal loop, without checking loop condition</span</li>
-    <li><b>break</b> <span>terminates the most internal loop</span></li>
     <pre>
+      <span>for</span> i <span>in</span> 0..5
+        <span>if</span> i < 2 <span>then</span>
+          <span>next</span>
+        <span>end</span>
+          puts i
+      <span>end</span>
+
+      => 2
+      => 3
+      => 4
+      => 5
+      </pre>
+    <li><b>redo</b> <span>restarts the iteration of the most internal loop, without checking loop condition</span></li>
+    <pre>
+      <span>for</span> i <span>in</span> 0..5
+        <span>if</span> i < 2 <span>then</span>
+          puts i
+          <span>redo</span>
+        <span>end</span>
+      <span>end</span>
+
+      => 0 (infinite loop)
     </pre>
-    <li>nested data structures</li>
-      <pre>there hello there hello there hello there
+    <li><b>break</b> <span>terminates the most internal loop</span></li>
+      <pre>
+      <span>for</span> i <span>in</span> 0..5
+        <span>if</span> i > 2 <span>then</span>
+          <span>break</span>
+        <span>end</span>
+          puts i
+      <span>end</span>
+
+      => 0
+      => 1
+      => 2
       </pre>
   </ul>
   </td>
   <td>
     <ul>
     <li><b>for</b> <span>repeats until condition evaluates to false</span></li>
-    <li><span>use a <b>counter</b> as a condition: (var i = 0; i < length; i++)<span></li>
+    <li><span>use a <b>counter</b> as a condition: (var i = 0; i < array.length; i++)<span></li>
     <pre class="large">
     <span>for</span> ([initialize]; [condition]; [increment]) {
         statement;
-      }
+    }
     </pre>
     <li><b>for...in</b> <span>creates a loop iterating over property names</li>
     <pre>
     <span>for</span> (variable <span>in</span> object) {
         statement;
-      }
+    }
     </pre>
     <li><b>for...of</b> <span>creates a loop iterating over property values</li>
     <pre>
     <span>for</span> (variable <span>of</span> object) {
         statement;
-      }
+    }
     </pre>
     <li><b>while</b> <span>executes statements as long as specific condition evalutes to true</span></li>
     <pre>
@@ -82,17 +112,23 @@
     <span>while</span> (condition);
     </pre>
     <li><b>label</b> <span>provides a statement with an identifier so it can be used elsewhere in your program</span></li>
+    <pre>
+    <span>label</span> :
+      statement
+    </pre>
     <li><b>continue</b> <span>used to restart a while, do-while, for, or label statement</span></li>
     <pre>
     <span>continue;</span>
     </pre>
 
-    <li><b>break</b></li>
+    <li><b>break</b> <span>terminates the most internal loop</span></li>
     <pre>
-    <span>break;</span>
+    <span>for</span> (i = 0; i < a.length; i++) {
+      if (a[i] == theValue) {
+        <span>break;</span>
+      }
+    }
     </pre>
-    <li>nested data structures:</li>
-      <pre>there hello there hello there hello there</pre>
     </ul>
   </td>
   </tr>
