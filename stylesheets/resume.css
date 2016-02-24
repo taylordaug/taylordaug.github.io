@@ -3,16 +3,22 @@
   text-decoration: none;
 }
 
+/*.edbutton a:click {
+  background-color: #88A6B2;
+  color: white;
+}*/
+
 .center {
   margin-bottom: 0;
   padding-bottom: 0;
 }
 
-div ul {
+.resume {
   text-align: center;
-  list-style: none;
-  padding: 0;
-  margin-bottom: 3%;
+}
+
+.details {
+  padding: 2.5%;
 }
 
 .edbutton {
@@ -65,5 +71,41 @@ div ul {
   padding-bottom: 3%;
   padding-right: 1.5%;
   padding-left: 1.5%;
+}
+
+.ed {
+  padding: 2%;
+  position: relative;
+  border: 2px solid #FFDAE0;
+  width: 50%;
+  margin: auto;
+}
+
+.work {
+  padding: 2%;
+  position: relative;
+  border: 2px solid #FFDAE0;
+  width: 50%;
+  margin: auto;
+}
+
+.lead {
+  padding: 2%;
+  position: relative;
+  border: 2px solid #FFDAE0;
+  width: 50%;
+  margin: auto;
+}
+
+.vol {
+  padding: 2%;
+  position: relative;
+  border: 2px solid #FFDAE0;
+  width: 50%;
+  margin: auto;
+}
+
+span {
+  font-size: 1.2em;
 }
 
