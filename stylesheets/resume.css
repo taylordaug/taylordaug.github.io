@@ -15,7 +15,7 @@ div ul {
   margin-bottom: 3%;
 }
 
-.button {
+.edbutton {
   font-size: 1.3em;
   border: 3px dotted #88A6B2;
   display: inline-block;
@@ -28,4 +28,42 @@ div ul {
   padding-left: 1.5%;
 }
 
+.workbutton {
+  font-size: 1.3em;
+  border: 3px dotted #88A6B2;
+  display: inline-block;
+  width: 5em;
+  border-radius: 30%;
+  margin: 1.5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-right: 1.5%;
+  padding-left: 1.5%;
+}
+
+.leadbutton {
+  font-size: 1.3em;
+  border: 3px dotted #88A6B2;
+  display: inline-block;
+  width: 5em;
+  border-radius: 30%;
+  margin: 1.5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-right: 1.5%;
+  padding-left: 1.5%;
+}
+
+.volbutton {
+  font-size: 1.3em;
+  border: 3px dotted #88A6B2;
+  display: inline-block;
+  width: 5em;
+  border-radius: 30%;
+  margin: 1.5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-right: 1.5%;
+  padding-left: 1.5%;
+}
 
