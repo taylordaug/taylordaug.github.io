@@ -19,12 +19,24 @@ div ul {
   font-size: 1.3em;
   border: 3px dotted #88A6B2;
   display: inline-block;
-  width: 5em;
+  width: 7em;
+  height: 5em;
   border-radius: 30%;
   margin: 1.5%;
-  padding-top: 3%;
-  padding-bottom: 3%;
-  padding-right: 1.5%;
-  padding-left: 1.5%;
+  line-height: 5em;
 }
 
+.projects {
+  text-align: center;
+  padding-bottom: 2.5%;
+}
+
+.button a:hover {
+  font-weight: normal;
+  display: inline-block;
+  width: 7em;
+  height: 5em;
+  border-radius: 30%;
+  background-color: #88A6B2;
+  color: white;
+}
