@@ -3,10 +3,45 @@
   text-decoration: none;
 }
 
-/*.edbutton a:click {
+.edbutton a:hover {
+  font-weight: normal;
+  display: inline-block;
+  width: 7em;
+  height: 5em;
+  border-radius: 30%;
   background-color: #88A6B2;
   color: white;
-}*/
+}
+
+.leadbutton a:hover {
+  font-weight: normal;
+  display: inline-block;
+  width: 7em;
+  height: 5em;
+  border-radius: 30%;
+  background-color: #88A6B2;
+  color: white;
+}
+
+.volbutton a:hover {
+  font-weight: normal;
+  display: inline-block;
+  width: 7em;
+  height: 5em;
+  border-radius: 30%;
+  background-color: #88A6B2;
+  color: white;
+}
+
+.workbutton a:hover {
+  font-weight: normal;
+  display: inline-block;
+  width: 7em;
+  height: 5em;
+  border-radius: 30%;
+  background-color: #88A6B2;
+  color: white;
+}
 
 .center {
   margin-bottom: 0;
@@ -25,52 +60,44 @@
   font-size: 1.3em;
   border: 3px dotted #88A6B2;
   display: inline-block;
-  width: 5em;
+  width: 7em;
+  height: 5em;
   border-radius: 30%;
   margin: 1.5%;
-  padding-top: 3%;
-  padding-bottom: 3%;
-  padding-right: 1.5%;
-  padding-left: 1.5%;
+  line-height: 5em;
 }
 
 .workbutton {
   font-size: 1.3em;
   border: 3px dotted #88A6B2;
   display: inline-block;
-  width: 5em;
+  width: 7em;
+  height: 5em;
   border-radius: 30%;
   margin: 1.5%;
-  padding-top: 3%;
-  padding-bottom: 3%;
-  padding-right: 1.5%;
-  padding-left: 1.5%;
+  line-height: 5em;
 }
 
 .leadbutton {
   font-size: 1.3em;
   border: 3px dotted #88A6B2;
   display: inline-block;
-  width: 5em;
+  width: 7em;
+  height: 5em;
   border-radius: 30%;
   margin: 1.5%;
-  padding-top: 3%;
-  padding-bottom: 3%;
-  padding-right: 1.5%;
-  padding-left: 1.5%;
+  line-height: 5em;
 }
 
 .volbutton {
   font-size: 1.3em;
   border: 3px dotted #88A6B2;
   display: inline-block;
-  width: 5em;
+  width: 7em;
+  height: 5em;
   border-radius: 30%;
   margin: 1.5%;
-  padding-top: 3%;
-  padding-bottom: 3%;
-  padding-right: 1.5%;
-  padding-left: 1.5%;
+  line-height: 5em;
 }
 
 .ed {
