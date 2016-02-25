@@ -32,6 +32,12 @@ ul {
   text-decoration: none;
 }
 
+.posts {
+  padding-top: 0;
+  padding-bottom: 0;
+
+}
+
 i {
   color: #88A6B2;
 }
