@@ -28,6 +28,7 @@
 
 .here {
   font-weight: bold;
+  text-shadow: 0 0 2em #61777F;
 }
 
 .buttons {
@@ -46,10 +47,17 @@
   border-bottom: 2px solid #B2B191;
   font-size: 1.2em;
   text-align: center;
-  position: relative;
-  word-spacing: 2em;
   padding: 1em;
+}
 
+.topbuttons > div {
+  display: inline-block;
+  padding-left: 1.3em;
+  padding-right: 1.3em;
+}
+
+.topbuttons a:hover {
+  text-shadow:  0 0 2em #61777F;
 }
 
 
