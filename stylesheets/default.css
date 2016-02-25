@@ -72,12 +72,15 @@ h3 {
 }
 
 .pagetext {
-  text-align: center;
   color: #88A6B2;
-  margin-left: 10%;
-  margin-right: 10%;
+  display: inline-block;
+  vertical-align: top;
+  width: 340px;
   padding-bottom: 5%;
+  padding-left: 3%;
+  padding-top: 2%;
 }
+
 * {
   font-family: 'Cabin'; sans-serif;
   color: #61777F;
@@ -85,7 +88,6 @@ h3 {
 
 .center {
   text-align: center;
-  padding: 2%;
 }
 
 .background {
@@ -95,6 +97,18 @@ h3 {
   background-size: cover;
   position: relative;
   padding: 0em;
+}
+
+.photo {
+ border: 10px solid #FFDAE0;
+ border-bottom: 20px solid #FFDAE0;
+ text-align: center;
+ margin-left: 30%;
+ display: inline-block;
+ box-shadow: 0 0 1em grey;
+ margin-bottom: 5%;
+ padding: 0;
+ transform: rotate(-10deg);
 }
 
 /* Social media icons from perfecticons.com */
